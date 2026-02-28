@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, World!</title>
-    <style>
-      body{
-        padding: 25px;
-      }
-      .title {
-        color: #5C6AC4;
-        
-      }
-    </style>
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="style.css">
   </head>
+
+
+
   <body>
-      <h1 class="title">Hello World!</h1>
-      <p id="currentTime"></p>
-      <script>
-        function showTime() {
-          document.getElementById('currentTime').innerHTML = new Date().toUTCString();
-        }
-        showTime();
-        setInterval(function () {
-          showTime();
-        }, 1000);
-      </script>
+    <header>
+      <h1>Study Buddy</h1>
+      <div id="mode">
+        <button>Study</button>
+        <button>Files</button>
+      </div>
+    </header>
+
+    <div id="StudyMode">
+      <div id="SOptions">
+        <div id="SPlaylists">
+          <button>^</button>
+          <div id="SPlSelection">
+            
+          </div>
+        </div>
+        <div id="SActions">
+          <button>Prev</button>
+          <button>Next</button>
+          <div id="SAZoom">
+            <button>+</button>
+            <button>-</button>
+           </div> 
+        </div>
+      </div>
+      <div id="SProblem">
+        <img id="SPText">
+        <img id="SPAnswer">
+      </div>
+    </div>
+
+
+    <div id="FilesMode">
+      <div id="FBrowser">
+        <p id="FBPath"></p>
+        <div id="FBDirs">
+        </div>
+        <button>+</button>
+      </div>
+
+      <div id="FImages">
+        <div id="FIFiles">
+        </div>
+        <button>+</button>
+      </div>
+    </div>
   </body>
 </html>
